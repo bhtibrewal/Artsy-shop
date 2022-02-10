@@ -1,162 +1,163 @@
-
 /*  */
 .arstyShop-header {
-    padding: 1rem 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100vw;
-    background: var(--secondary-color);
-  }
-  .arstyShop-header > * {
-    color: var(--light-text);
-  }
-  .right-side {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    font-size: large;
-  }
-  .items {
-    color: var(--primary-color);
-    font-size: 1.4rem;
-  }
-  
-  /* category section */
-  .category-section {
-    display: flex;
-    padding: 5rem;
-    justify-content: space-around;
-  }
-  .category-section .btn {
-    background: var(--secondary-color);
-    color: var(--light-bg);
-  }
-  
-  /*  */
-  .hero-section {
-    position: relative;
-    width: 80vw;
-    margin: auto;
-  }
-  .hero-overlay {
-    padding: 2rem;
-    position: absolute;
-    left: 25%;
-    top: 40%;
-    gap: 2rem;
-    text-align: center;
-    max-width: 60%;
-    background: rgb(31, 31, 31, 0.7);
-    color: var(--light-text);
-  }
-  
-  .collection-section {
-    text-align: center;
-    padding: 2rem;
-    margin-top: 3rem;;
-  }
-  .collection-grid{
-    margin:3rem;
-  }
-  .collection-items {
-    border-radius: 4px;
-    overflow:hidden;
-    display: grid;
-    align-items: end;
-  }
-  .collection-image,
-  .collection-content {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    color: var(--light-text);
-  }
-  .collection-content {
-    padding:1rem;
-    width:100%;
-    height:100%;
-    text-align: left;
-    display: flex;
-    background:rgba(0, 0, 0, 0.356);
-  }
-  .collection-text{
-    display:flex;
-    flex-direction:column;
-    justify-content: space-between;
-  }
-  .collection-tag{
-    align-self:flex-start;
-    background: var(--primary-text);
-    color:var(--light-text);
-  }
-  .collection-artworks{
-    gap: 1rem;
-    justify-content:flex-end;
-    align-items: flex-end;;
-    width:50%;
-  }
-  .collection-artwork-item{
-    flex:0 0 6rem;
-    width:8rem;
-    border-radius:4px;
-    overflow:hidden;
-  }
-  
-  /* subscribe modal */
-  .subscribe-section-overlay,
-  .login-section-overlay {
-    background: rgb(31, 31, 31, 0.7);
-    width: 100vw;
-    height: 100vh;
-    z-index: 99999;
-    position: fixed;
-    top: 0;
-    justify-content: center;
-  }
-  .login-section-overlay{
-      display:none;
-  }
-  .subscribe-section {
-    width: 50%;
-    max-width: 54rem;
-    padding: 4rem;
-    align-items: center;
-    gap: 3rem;
-    background: var(--light-bg);
-    text-align: center;
-  }
-  
-  /*  */
+  padding: 1rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  background: var(--secondary-color);
+}
+.arstyShop-header > * {
+  color: var(--light-text);
+}
+.right-side {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: large;
+}
+.items {
+  color: var(--primary-color);
+  font-size: 1.4rem;
+}
 
-  .btn {
-    justify-content: center;
-  }
-  .login-section .floating-btn {
-    aspect-ratio: 1;
-    background: var(--primary-text);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .login-section {
-    display: flex;
-    align-items: flex-end;
-    background: var(--light-bg);
-  }
-  .right-sec,
-  .left-sec {
-    padding: 5rem;
-    max-width: 35rem;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 3rem;
-    text-align: center;
-  }
-  .right-sec i,
-  .left-sec i {
-    color: var(--primary-color);
-  }
-  
+/* category section */
+.category-section {
+  display: flex;
+  padding: 5rem;
+  justify-content: space-around;
+}
+.category-section .btn {
+  background: var(--secondary-color);
+  color: var(--light-bg);
+}
+
+/*  */
+.hero-section {
+  position: relative;
+  width: 80vw;
+  margin: auto;
+}
+.hero-overlay {
+  padding: 2rem;
+  position: absolute;
+  left: 25%;
+  top: 40%;
+  gap: 2rem;
+  text-align: center;
+  max-width: 60%;
+  background: rgb(31, 31, 31, 0.7);
+  color: var(--light-text);
+}
+
+.collection-section {
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+.collection-grid {
+  margin: 3rem;
+}
+.collection-image img{
+    object-fit:fill;
+}
+.collection-items {
+  border-radius: 4px;
+  overflow: hidden;
+  display: grid;
+  align-items: end;
+}
+.collection-image,
+.collection-content {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  color: var(--light-text);
+}
+.collection-content {
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  display: flex;
+  background: rgba(0, 0, 0, 0.356);
+}
+.collection-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.collection-tag {
+  align-self: flex-start;
+  background: var(--primary-text);
+  color: var(--light-text);
+}
+.collection-artworks {
+  /* gap: 1rem; */
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 50%;
+}
+.collection-artwork-item {
+  flex: 0 0 6rem;
+  width: 8rem;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* subscribe modal */
+.subscribe-section-overlay,
+.login-section-overlay {
+  background: rgb(31, 31, 31, 0.7);
+  width: 100vw;
+  height: 100vh;
+  z-index: 99999;
+  position: fixed;
+  top: 0;
+  justify-content: center;
+}
+.login-section-overlay {
+  display: none;
+}
+.subscribe-section {
+  width: 50%;
+  max-width: 54rem;
+  padding: 4rem;
+  align-items: center;
+  gap: 3rem;
+  background: var(--light-bg);
+  text-align: center;
+}
+
+/*  */
+
+.btn {
+  justify-content: center;
+}
+.login-section .floating-btn {
+  aspect-ratio: 1;
+  background: var(--primary-text);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.login-section {
+  display: flex;
+  align-items: flex-end;
+  background: var(--light-bg);
+}
+.right-sec,
+.left-sec {
+  padding: 5rem;
+  max-width: 35rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 3rem;
+  text-align: center;
+}
+.right-sec i,
+.left-sec i {
+  color: var(--primary-color);
+}
