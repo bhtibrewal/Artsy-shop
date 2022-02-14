@@ -1,0 +1,133 @@
+.product_page-body {
+  height: 100vh;
+  background: var(--light-text);
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "header header"
+    "main main  ";
+}
+.product_page-main {
+  grid-area: main;
+  overflow: auto;
+}
+.product_page-aside {
+  grid-area: aside;
+}
+.product_page-header {
+  grid-area: header;
+}
+
+/* aside */
+.product_page-aside {
+  padding: 3rem 5%;
+}
+.aside-sec {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+.aside-sec label {
+  display: flex;
+  align-items: center;
+}
+.sort-sec {
+  margin-top: 0.75rem;
+}
+
+/*  */
+.menu-sec {
+  background: var(--light-bg);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 2rem 5%;
+}
+.main-drop {
+  position: relative;
+  padding: 1rem;
+}
+.dropdown-box {
+  border-radius: 4px;
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+.main-drop .dropdown {
+  background: var(--primary-text);
+  color: var(--light-text);
+}
+.main-drop .dropdown > *:hover {
+  background: var(--secondary-color);
+}
+/*  */
+.dropdown-container {
+  position: relative;
+  padding: 1rem;
+}
+.dropdown-btn {
+  border: 1px solid var(--primary-text);
+  border-radius: 3rem;
+  padding: 1rem 2rem;
+}
+.dropdown-btn:hover {
+  border-color: transparent;
+  background: var(--gray-bg);
+}
+.dropdown {
+  background: var(--light-bg);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: max-content;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+
+  display: none;
+}
+.main-drop:hover .dropdown,
+.dropdown-container:hover .dropdown {
+  display: flex;
+}
+.dropdown > * {
+  padding: 1rem 2rem;
+  width: 100%;
+  text-transform: uppercase;
+}
+.dropdown > *:hover {
+  background: var(--gray-bg);
+  cursor: pointer;
+}
+
+.products-sec {
+  margin-top: 2rem;
+}
+.prducts-grid {
+  padding: 2rem 5%;
+  margin: 2rem 0;
+  background: lightyellow;
+}
+.page-header-section {
+  display: grid;
+}
+.section-bg {
+  height: 100%;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.section-bg img {
+height:100%;
+}
+.section-content {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  min-height: 16rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--light-text);
+}
