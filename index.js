@@ -1,5 +1,6 @@
 const loginSection = document.querySelector(".login-section-overlay");
 const signupSection = document.querySelector(".signup-section-overlay");
+const signinSection = document.querySelector(".signin-section-overlay");
 
 const closeFunc = (e) => {
     e.parentElement.style.display = "none";
@@ -11,7 +12,14 @@ const openLogin = () => {
 }
 const openSignup = () => {
     loginSection.style.display = "none";
+    signinSection.style.display = "none";
     signupSection.style.display = "flex";
+    console.log("click")
+}
+const openSignin = () => {
+    loginSection.style.display = "none";
+    signupSection.style.display = "none";
+    signinSection.style.display = "flex";
     console.log("click")
 }
 let on = false;

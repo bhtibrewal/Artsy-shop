@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/617c60ee1d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://artsyui.netlify.app/src/artsyUI.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/pages/homepage/homepage.css" />
+    <title>Artsy-shop</title>
+  </head>
+
+  <body class="homepage-body">
+    <!--********** Header ************-->
+    <header class="arstyShop-header homepage-header">
+      <h3>Artsy Shop</h3>
+
+      <div class="artsy-input icon-input">
+        <i class="fas fa-search"></i>
+        <input placeholder="Search..." type="text" />
+      </div>
+
+      <div class="right-side">
+        <a href="">
+          <button class="btn btn-primary">Login</button>
+        </a>
+        <div onclick="openLogin()">
+          <i class="fa-regular fa-user"></i>
+        </div>
+
+        <a class="favourite" href="">
+          <i class="fa-regular fa-heart"></i>
+          <span class="items">25</span>
+        </a>
+
+        <a class="cart" href="">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="items">25</span>
+        </a>
+      </div>
+    </header>
+
+    <!--********** main ************-->
+    <main class="homepage-main">
+      <!-- category section -->
+      <section class="category-section">
+        <button class="btn">Abstraction</button>
+        <a href="/pages/product/product.html">
+          <button class="btn">Nature</button>
+        </a>
+
+        <button class="btn">Landscape</button>
+        <button class="btn">Portrait</button>
+        <button class="btn">Urban</button>
+        <button class="btn">Pop Culture</button>
+        <button class="btn">Medival</button>
+        <button class="btn">Street</button>
+      </section>
+
+      <!-- hero section -->
+      <section class="hero-section">
+        <div class="hero-img">
+          <img
+            alt="hero image"
+            src="https://images.unsplash.com/photo-1606819717115-9159c900370b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGFydCUyMGdhbGxlcnl8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60"
+          />
+        </div>
+        <div class="hero-overlay flex-col">
+          <h2>Discover the creative universe of our artists.</h2>
+          <button class="btn btn-primary">Discover</button>
+        </div>
+      </section>
+
+      <!-- collection section -->
+      <section class="collection-section">
+        <h1>Get inspired by our Collections</h1>
+
+        <div class="collection-grid grid-2">
+          <a href="" class="collection-items">
+            <div class="collection-image">
+              <img
+                alt="collection image "
+                src="https://sh-cdn.singulart.com/eyJidWNrZXQiOiJzaW5ndWxhcnQtd2Vic2l0ZS1wcm9kIiwia2V5IjoiY29sbGVjdGlvbnNcL3YyXC9waWN0dXJlc1wvY3JvcHBlZFwvY292ZXJcL2Jhc2VcLzYwMTVfY292ZXJfOTEzZmRjODhhMDUzMGQ3N2UxYmM1MGQ4YmZhZTdlZDEuanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6NjIwLCJoZWlnaHQiOjQyMCwiZml0IjoiY292ZXIifSwidG9Gb3JtYXQiOiJ3ZWJwIiwid2VicCI6eyJxdWFsaXR5Ijo4MH19fQ==?signature=076ed76d7d893fd65222c6d448b4d66976923ed50fba5b9a768dd71cb6a890f9"
+              />
+            </div>
+
+            <div class="collection-content">
+              <div class="collection-text">
+                <span class="btn collection-tag">Colors</span>
+                <div>
+                  <h3>Pantoon Colors of the year 2022 - Very Peri</h3>
+                  <p>19 artwork</p>
+                </div>
+              </div>
+              <div class="collection-artworks flex-col">
+                <div class="collection-artwork-item">
+                  <img
+                    src="https://sh-cdn.singulart.com/eyJidWNrZXQiOiJzaW5ndWxhcnQtd2Vic2l0ZS1wcm9kIiwia2V5IjoiYXJ0d29ya3NcL3YyXC9jcm9wcGVkXC8xNTYxN1wvbWFpblwvYmFzZVwvMTI0NjgxOV80ZTI3ZDA0ZTUzZDlhNTlkYjM1ZjY0YWEyYTNkMzQ1ZC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAsImhlaWdodCI6MTAwLCJmaXQiOiJpbnNpZGUifSwidG9Gb3JtYXQiOiJqcGVnIiwianBlZyI6eyJxdWFsaXR5Ijo4MH19fQ==?signature=4a54a173c955ad5ff1f0bea610cbb06038db39bbe488509c5068f055c21b9dff"
+                  />
+                </div>
+                <div class="collection-artwork-item">
+                  <img
+                    src="https://sh-cdn.singulart.com/eyJidWNrZXQiOiJzaW5ndWxhcnQtd2Vic2l0ZS1wcm9kIiwia2V5IjoiYXJ0d29ya3NcL3YyXC9jcm9wcGVkXC84MjE3XC9tYWluXC9iYXNlXC8xMjg3Njg3XzI3NjE3ZjMyZDdlYzY3MDY0NWM1NTIwMTI1ZjRhNGQ0LmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMCwiaGVpZ2h0IjoxMDAsImZpdCI6Imluc2lkZSJ9LCJ0b0Zvcm1hdCI6ImpwZWciLCJqcGVnIjp7InF1YWxpdHkiOjgwfX19?signature=b25f35965ba6b274be88e781046904b253f655e48c677717357ce2d18b1a07bf"
+                  />
+                </div>
+                <div class="collection-artwork-item">
+                  <img
+                    src="https://sh-cdn.singulart.com/eyJidWNrZXQiOiJzaW5ndWxhcnQtd2Vic2l0ZS1wcm9kIiwia2V5IjoiYXJ0d29ya3NcL3YyXC9jcm9wcGVkXC8xNTM5NVwvbWFpblwvYmFzZVwvMTI5NjQxN185NzhmYjc4OGUxY2VjMjIzNmFhYjRhZWRjZTU1OWMyNi5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAsImhlaWdodCI6MTAwLCJmaXQiOiJpbnNpZGUifSwidG9Gb3JtYXQiOiJqcGVnIiwianBlZyI6eyJxdWFsaXR5Ijo4MH19fQ==?signature=ffea2d3c5a1bacacfb441a252aaecb4bbab5751057f229961c83e3bb5191bd96"
+                  />
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="" class="collection-items">
+            <div class="collection-image">
+              <img
+                alt="collection image "
+                class="collection-image"
+                src="https://sh-cdn.singulart.com/eyJidWNrZXQiOiJzaW5ndWxhcnQtd2Vic2l0ZS1wcm9kIiwia2V5IjoiY29sbGVjdGlvbnNcL3YyXC9waWN0dXJlc1wvY3JvcHBlZFwvY292ZXJcL2Jhc2VcLzMyODdfY292ZXJfY2UwNjRmNjI2ZGE0NjI0MzI1MTA5YjRiMDVmZTgyNmYuanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6NDY1LCJoZWlnaHQiOjMxNSwiZml0IjoiY292ZXIifSwidG9Gb3JtYXQiOiJqcGVnIiwianBlZyI6eyJxdWFsaXR5Ijo4MH19fQ==?signature=ce6e4956bbf7bd80c4bf6471ec041536f8543a032bd9c053fcc96ecc80c63b1c"
+              />
+            </div>
+
+            <div class="collection-content">
+              <div class="collection-text">
+                <span class="btn collection-tag">Colors</span>
+                <div>
+                  <h3>Art and Antiquity</h3>
+                  <p>5 artwork</p>
+                </div>
+              </div>
+              <div class="collection-artworks flex-col">
+                <div class="collection-artwork-item">
+                  <img
+                    src="https://sh-cdn.singulart.com/eyJidWNrZXQiOiJzaW5ndWxhcnQtd2Vic2l0ZS1wcm9kIiwia2V5IjoiYXJ0d29ya3NcL3YyXC9jcm9wcGVkXC8xNTYxN1wvbWFpblwvYmFzZVwvMTI0NjgxOV80ZTI3ZDA0ZTUzZDlhNTlkYjM1ZjY0YWEyYTNkMzQ1ZC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAsImhlaWdodCI6MTAwLCJmaXQiOiJpbnNpZGUifSwidG9Gb3JtYXQiOiJqcGVnIiwianBlZyI6eyJxdWFsaXR5Ijo4MH19fQ==?signature=4a54a173c955ad5ff1f0bea610cbb06038db39bbe488509c5068f055c21b9dff"
+                  />
+                </div>
+                <div class="collection-artwork-item">
+                  <img
+                    src="https://sh-cdn.singulart.com/eyJidWNrZXQiOiJzaW5ndWxhcnQtd2Vic2l0ZS1wcm9kIiwia2V5IjoiYXJ0d29ya3NcL3YyXC9jcm9wcGVkXC84MjE3XC9tYWluXC9iYXNlXC8xMjg3Njg3XzI3NjE3ZjMyZDdlYzY3MDY0NWM1NTIwMTI1ZjRhNGQ0LmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMCwiaGVpZ2h0IjoxMDAsImZpdCI6Imluc2lkZSJ9LCJ0b0Zvcm1hdCI6ImpwZWciLCJqcGVnIjp7InF1YWxpdHkiOjgwfX19?signature=b25f35965ba6b274be88e781046904b253f655e48c677717357ce2d18b1a07bf"
+                  />
+                </div>
+                <div class="collection-artwork-item">
+                  <img
+                    src="https://sh-cdn.singulart.com/eyJidWNrZXQiOiJzaW5ndWxhcnQtd2Vic2l0ZS1wcm9kIiwia2V5IjoiYXJ0d29ya3NcL3YyXC9jcm9wcGVkXC8xNTM5NVwvbWFpblwvYmFzZVwvMTI5NjQxN185NzhmYjc4OGUxY2VjMjIzNmFhYjRhZWRjZTU1OWMyNi5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAsImhlaWdodCI6MTAwLCJmaXQiOiJpbnNpZGUifSwidG9Gb3JtYXQiOiJqcGVnIiwianBlZyI6eyJxdWFsaXR5Ijo4MH19fQ==?signature=ffea2d3c5a1bacacfb441a252aaecb4bbab5751057f229961c83e3bb5191bd96"
+                  />
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Subscribe Overlay -->
+    <section class="flex-col subscribe-section-overlay">
+      <button class="btn overlay-close" onclick="closeFunc(this)">
+        <i class="fa-solid fa-x"></i>
+      </button>
+      <div class="flex-col subscribe-section">
+        <h3>Learn everything about contemporary art.</h3>
+        <p>Subscribe to our newsletter to get 10% off!!</p>
+        <div class="artsy-input">
+          <input type="text" />
+          <span class="input-label">Email</span>
+        </div>
+        <button class="btn btn-primary">
+          <span>Subscribe</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Login Overlay -->
+    <section class="flex-col login-section-overlay">
+      <button class="btn overlay-close" onclick="closeFunc(this)">
+        <i class="fa-solid fa-x"></i>
+      </button>
+      <div class="login-section">
+        <div class="flex-col left-sec">
+          <i class="primary fa-regular fa-user fa-5x"></i>
+          <h3>I am an art lover, a collector</h3>
+          <p>
+            Create an account to save your favorites and to receive personal
+            offers.
+          </p>
+          <button class="btn btn-primary" onclick="openSignup()">
+            create an account
+          </button>
+          <div>
+            <hr />
+            <p class="body-md">Already have account ?</p>
+            <div onclick="openSignin()" class="link-text-primary">SIGN IN</div>
+          </div>
+        </div>
+
+        <div class="btn floating-btn">or</div>
+
+        <div class="flex-col right-sec gray">
+          <i class="primary fa-solid fa-palette fa-5x"></i>
+          <h3>I am an artist</h3>
+          <p>
+            You can apply online, and we will respond to you as quickly as
+            possible.
+          </p>
+          <button class="btn btn-primary">Apply Online</button>
+          <div>
+            <hr />
+            <p class="body-md">Already a Artsy Artist?</p>
+            <div class="link-text-primary">SIGN IN</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sign up overlay -->
+    <section class="flex-col signup-section-overlay">
+      <button class="btn overlay-close" onclick="closeFunc(this)">
+        <i class="fa-solid fa-x"></i>
+      </button>
+      <div class="flex-col signup-sec">
+        <i class="primary fa-regular fa-user fa-5x"></i>
+        <p class="body-l">Create my account on Artsy Shop!</p>
+
+        <div class="artsy-input">
+          <input type="text" />
+          <span class="input-label">Full Name</span>
+        </div>
+        <div class="artsy-input">
+          <input type="text" />
+          <span class="input-label">Email</span>
+        </div>
+        <div class="artsy-input">
+          <input type="password" />
+          <span class="input-label">Password</span>
+        </div>
+        <label class="flex-align-center">
+          <input type="checkbox" />
+          <span class="checkbox-text">
+            By registering, I accept the
+            <a class="primary" href="">General terms and conditions.</a>
+          </span>
+        </label>
+        <button class="btn btn-primary">create an account</button>
+        <div>
+          <!-- <hr /> -->
+          <p class="body-md">Already have account ?</p>
+          <div onclick="openSignin()" class="link-text-primary">SIGN IN</div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section class="flex-col signin-section-overlay">
+      <button class="btn overlay-close" onclick="closeFunc(this)">
+        <i class="fa-solid fa-x"></i>
+      </button>
+      <div class="flex-col signup-sec">
+        <i class="primary fa-regular fa-user fa-5x"></i>
+        <p class="body-l">Login to my user account.</p>
+
+        <div class="artsy-input">
+          <input type="text" />
+          <span class="input-label">Email</span>
+        </div>
+        <div class="artsy-input">
+          <input type="password" />
+          <span class="input-label">Password</span>
+        </div>
+        <label class="flex-align-center">
+          <input type="checkbox" />
+          <span class="checkbox-text"> Keep me logged in. </span>
+        </label>
+        <button class="btn btn-primary">
+          <span>validate</span>
+          <i class="fa-solid fa-arrow-right-long"></i>
+        </button>
+        <a href="" class="link-text-primary">Forgot your password?</a>
+        <div>
+          <!-- <hr /> -->
+          <p class="body-md">Still don't have an account ?</p>
+          <div onclick="openSignup()" class="link-text-primary">SIGN UP</div>
+        </div>
+      </div>
+    </section>
+
+    <script src="/pages/homepage/homepage.js"></script>
+    <script src="/index.js"></script>
+  </body>
+</html>

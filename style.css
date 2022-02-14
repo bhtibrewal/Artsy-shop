@@ -47,9 +47,14 @@ img {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
-.checkbox-text{
- margin:0 1rem;
+
+.checkbox-text {
+  margin: 0 1rem;
 }
+.btn span {
+  margin: auto;
+}
+
 /* header  */
 .arstyShop-header {
   padding: 1rem 4rem;
@@ -76,7 +81,9 @@ img {
 /* subscribe modal */
 .subscribe-section-overlay,
 .login-section-overlay,
-.signup-section-overlay {
+.signup-section-overlay,
+.signin-section-overlay {
+  background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(2px);
   width: 100vw;
   height: 100vh;
@@ -84,17 +91,32 @@ img {
   position: fixed;
   top: 0;
   justify-content: center;
+  gap:1rem;
 }
-.login-section-overlay {
+.login-section-overlay,
+.signup-section-overlay ,
+.signin-section-overlay{
   display: none;
 }
-.subscribe-section, .signup-sec {
+.subscribe-section,
+.signup-sec {
   max-width: 50rem;
   padding: 4rem;
   gap: 2rem;
   background: var(--light-bg);
   align-items: stretch;
   text-align: center;
+}
+.overlay-close{
+  font-size:1.5em;
+  aspect-ratio:1;
+  padding:1rem;
+  border-radius: 50%;
+  color: var(--primary-color);
+}
+.overlay-close:hover {
+  background: var(--primary-color);
+  color:var(--light-bg);
 }
 .login-section {
   display: flex;
@@ -122,11 +144,11 @@ img {
 .primary {
   color: var(--primary-color);
 }
-.signup-sec input[type="checkbox"]{
-  width:2rem;
-  height:2rem;
+.signup-sec input[type="checkbox"] {
+  width: 2rem;
+  height: 2rem;
 }
-.signup-sec input{
+.signup-sec input {
   align-self: flex-start;
 }
 /* slider */
