@@ -6,9 +6,13 @@ body {
     font-size: 30%;
   }
 }
-
-::-webkit-scrollbar {
-  display: none;
+.main::-webkit-scrollbar {
+  width:1.5rem;
+  padding:1rem;
+}
+.main::-webkit-scrollbar-thumb{
+  background:var(--secondary-color);
+  border-radius:1rem;
 }
 .flex-align-center {
   display: flex;
@@ -57,7 +61,7 @@ img {
 
 /* header  */
 .arstyShop-header {
-  padding: 1rem 4rem;
+  padding: 2rem 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -73,9 +77,31 @@ img {
   gap: 2rem;
   font-size: large;
 }
+.right-side >*{
+  cursor: pointer;
+}
 .items {
   color: var(--primary-color);
   font-size: 1.4rem;
+}
+
+/* page layout */
+.body {
+  height: 100vh;
+  background: var(--light-text);
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "header header"
+    "main main  ";
+}
+.main {
+  grid-area: main;
+  overflow: auto;
+}
+
+.header {
+  grid-area: header;
 }
 
 /* subscribe modal */
@@ -151,6 +177,32 @@ img {
 .signup-sec input {
   align-self: flex-start;
 }
+
+/*  */
+.page-header-section {
+  display: grid;
+}
+.page-header-section i{
+  color:var(--primary-color);
+}
+.section-bg {
+  height: 100%;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.section-bg img {
+height:100%;
+}
+.section-content {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  min-height: 16rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--light-text);
+}
+
 /* slider */
 .slidecontainer {
   width: 100%;

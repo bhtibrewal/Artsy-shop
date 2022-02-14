@@ -1,22 +1,3 @@
-.homepage-body{
-  height:100vh;
-  display:grid;
-  grid-template-rows: auto 1fr 1fr;
-  grid-template-columns: auto 1fr;
-  grid-template-areas: 
-  "header header header"
-  "main   main   main"
-  "main   main   main";
-}
-.homepage-main{
-  grid-area:main;
-  overflow-y:auto;
-}
-.homepage-header{
-  grid-area:header;
-}
-
-
 /* category section */
 .category-section {
   display: flex;

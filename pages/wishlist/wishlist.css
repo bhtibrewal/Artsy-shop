@@ -1,0 +1,8 @@
+.wishlist-sec {
+  padding: 2rem 5%;
+  margin: 2rem 0;
+  background: var(--light-bg);
+}
+.wishlist-sec .favourite-icon{
+    color: red;
+}
