@@ -33,29 +33,125 @@ h3,
 p {
   color: inherit;
 }
-img{
-  width:100%;
-  object-fit: contain;
+img {
+  width: 100%;
+  /* object-fit: contain; */
 }
 .grid-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
-.homepage-body{
-  height:100vh;
-  display:grid;
-  grid-template-rows: auto 1fr 1fr;
-  grid-template-columns: auto 1fr;
-  grid-template-areas: 
-  "header header header"
-  "main   main   main"
-  "main   main   main";
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
-.homepage-main{
-  grid-area:main;
-  overflow-y:auto;
+.checkbox-text{
+ margin:0 1rem;
 }
-.homepage-header{
-  grid-area:header;
+/* header  */
+.arstyShop-header {
+  padding: 1rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  background: var(--secondary-color);
+}
+.arstyShop-header > * {
+  color: var(--light-text);
+}
+.right-side {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: large;
+}
+.items {
+  color: var(--primary-color);
+  font-size: 1.4rem;
+}
+
+/* subscribe modal */
+.subscribe-section-overlay,
+.login-section-overlay,
+.signup-section-overlay {
+  backdrop-filter: blur(2px);
+  width: 100vw;
+  height: 100vh;
+  z-index: 99999;
+  position: fixed;
+  top: 0;
+  justify-content: center;
+}
+.login-section-overlay {
+  display: none;
+}
+.subscribe-section, .signup-sec {
+  max-width: 50rem;
+  padding: 4rem;
+  gap: 2rem;
+  background: var(--light-bg);
+  align-items: stretch;
+  text-align: center;
+}
+.login-section {
+  display: flex;
+  align-items: flex-end;
+  background: var(--light-bg);
+}
+.right-sec,
+.left-sec {
+  padding: 4rem;
+  max-width: 36rem;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: stretch;
+  gap: 3rem;
+  text-align: center;
+}
+.login-section .floating-btn {
+  aspect-ratio: 1;
+  background: var(--primary-text);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.primary {
+  color: var(--primary-color);
+}
+.signup-sec input[type="checkbox"]{
+  width:2rem;
+  height:2rem;
+}
+.signup-sec input{
+  align-self: flex-start;
+}
+/* slider */
+.slidecontainer {
+  width: 100%;
+}
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 10px;
+  background: #d3d3d3;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #04aa6d;
+  cursor: pointer;
 }

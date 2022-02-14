@@ -57,18 +57,20 @@
         <button class="btn">Medival</button>
         <button class="btn">Street</button>
       </section>
-      <!-- hero section -->
 
-      <div class="hero-section">
-        <img
-          alt="hero-img"
-          src="https://d17h7hjnfv5s46.cloudfront.net/assets/build/images/elements/home/home_slider_artists.63b548a7.jpg"
-        />
+      <!-- hero section -->
+      <section class="hero-section">
+        <div class="hero-img">
+          <img
+            alt="hero image"
+            src="https://images.unsplash.com/photo-1606819717115-9159c900370b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGFydCUyMGdhbGxlcnl8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60"
+          />
+        </div>
         <div class="hero-overlay flex-col">
           <h2>Discover the creative universe of our artists.</h2>
           <button class="btn btn-primary">Discover</button>
         </div>
-      </div>
+      </section>
 
       <!-- collection section -->
       <section class="collection-section">
@@ -92,11 +94,6 @@
                 </div>
               </div>
               <div class="collection-artworks flex-col">
-                <!-- <div class="collection-artwork-item">
-                  <img
-                    src="https://sh-cdn.singulart.com/eyJidWNrZXQiOiJzaW5ndWxhcnQtd2Vic2l0ZS1wcm9kIiwia2V5IjoiYXJ0d29ya3NcL3YyXC9jcm9wcGVkXC82M1wvbWFpblwvYmFzZVwvMTAxNDQyNV83ODAyM2EyZjE3MzhjZDg5NzlkNDMzMjAyMTFlMTVmMi5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAsImhlaWdodCI6MTAwLCJmaXQiOiJpbnNpZGUifSwidG9Gb3JtYXQiOiJqcGVnIiwianBlZyI6eyJxdWFsaXR5Ijo4MH19fQ==?signature=91bc736f0d45d99f16a10d6d677f22eec8d88372478f561f0dad5b5f492c3360"
-                  />
-                </div> -->
                 <div class="collection-artwork-item">
                   <img
                     src="https://sh-cdn.singulart.com/eyJidWNrZXQiOiJzaW5ndWxhcnQtd2Vic2l0ZS1wcm9kIiwia2V5IjoiYXJ0d29ya3NcL3YyXC9jcm9wcGVkXC8xNTYxN1wvbWFpblwvYmFzZVwvMTI0NjgxOV80ZTI3ZDA0ZTUzZDlhNTlkYjM1ZjY0YWEyYTNkMzQ1ZC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAsImhlaWdodCI6MTAwLCJmaXQiOiJpbnNpZGUifSwidG9Gb3JtYXQiOiJqcGVnIiwianBlZyI6eyJxdWFsaXR5Ijo4MH19fQ==?signature=4a54a173c955ad5ff1f0bea610cbb06038db39bbe488509c5068f055c21b9dff"
@@ -134,11 +131,6 @@
                 </div>
               </div>
               <div class="collection-artworks flex-col">
-                <!-- <div class="collection-artwork-item">
-                  <img
-                    src="https://sh-cdn.singulart.com/eyJidWNrZXQiOiJzaW5ndWxhcnQtd2Vic2l0ZS1wcm9kIiwia2V5IjoiYXJ0d29ya3NcL3YyXC9jcm9wcGVkXC82M1wvbWFpblwvYmFzZVwvMTAxNDQyNV83ODAyM2EyZjE3MzhjZDg5NzlkNDMzMjAyMTFlMTVmMi5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAsImhlaWdodCI6MTAwLCJmaXQiOiJpbnNpZGUifSwidG9Gb3JtYXQiOiJqcGVnIiwianBlZyI6eyJxdWFsaXR5Ijo4MH19fQ==?signature=91bc736f0d45d99f16a10d6d677f22eec8d88372478f561f0dad5b5f492c3360"
-                  />
-                </div> -->
                 <div class="collection-artwork-item">
                   <img
                     src="https://sh-cdn.singulart.com/eyJidWNrZXQiOiJzaW5ndWxhcnQtd2Vic2l0ZS1wcm9kIiwia2V5IjoiYXJ0d29ya3NcL3YyXC9jcm9wcGVkXC8xNTYxN1wvbWFpblwvYmFzZVwvMTI0NjgxOV80ZTI3ZDA0ZTUzZDlhNTlkYjM1ZjY0YWEyYTNkMzQ1ZC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAsImhlaWdodCI6MTAwLCJmaXQiOiJpbnNpZGUifSwidG9Gb3JtYXQiOiJqcGVnIiwianBlZyI6eyJxdWFsaXR5Ijo4MH19fQ==?signature=4a54a173c955ad5ff1f0bea610cbb06038db39bbe488509c5068f055c21b9dff"
@@ -159,61 +151,99 @@
           </a>
         </div>
       </section>
-
-      <!-- Subscribe Overlay -->
-      <section class="flex-col subscribe-section-overlay">
-        <button class="btn overlay-close" onclick="closeFunc(this)">
-          <i class="fa-solid fa-x fa-2x"></i>
-        </button>
-        <div class="flex-col subscribe-section">
-          <h3>Learn everything about contemporary art.</h3>
-          <p>Subscribe to our newsletter to get 10% off!!</p>
-          <div class="artsy-input">
-            <input type="text" />
-            <span class="input-label">Email</span>
-          </div>
-          <button class="btn btn-primary">Subscribe</button>
-        </div>
-      </section>
-
-      <!-- Login Overlay -->
-      <section class="flex-col login-section-overlay">
-        <button class="btn overlay-close" onclick="closeFunc(this)">
-          <i class="fa-solid fa-x fa-2x"></i>
-        </button>
-        <div class="login-section">
-          <div class="left-sec">
-            <i class="fa-regular fa-user fa-5x"></i>
-            <h3>I am an art lover, a collector</h3>
-            <p>
-              Create an account to save your favorites and to receive personal
-              offers.
-            </p>
-            <button class="btn btn-primary">create an account</button>
-            <div>
-              <hr />
-              <p class="body-md">Already have account ?</p>
-              <a href="" class="link-text-primary">SIGN IN</a>
-            </div>
-          </div>
-          <button class="btn floating-btn">or</button>
-          <div class="right-sec gray">
-            <i class="fa-solid fa-palette fa-5x"></i>
-            <h3>I am an artist</h3>
-            <p>
-              You can apply online, and we will respond to you as quickly as
-              possible.
-            </p>
-            <button class="btn btn-primary">Apply Online</button>
-            <div class="">
-              <hr />
-              <p class="body-md">Already a Artsy Artist?</p>
-              <a href="" class="link-text-primary">SIGN IN</a>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
+
+    <!-- Subscribe Overlay -->
+    <section class="flex-col subscribe-section-overlay">
+      <button class="btn overlay-close" onclick="closeFunc(this)">
+        <i class="fa-solid fa-x fa-2x"></i>
+      </button>
+      <div class="flex-col subscribe-section">
+        <h3>Learn everything about contemporary art.</h3>
+        <p>Subscribe to our newsletter to get 10% off!!</p>
+        <div class="artsy-input">
+          <input type="text" />
+          <span class="input-label">Email</span>
+        </div>
+        <button class="btn btn-primary">Subscribe</button>
+      </div>
+    </section>
+
+    <!-- Login Overlay -->
+    <section class="flex-col login-section-overlay">
+      <button class="btn overlay-close" onclick="closeFunc(this)">
+        <i class="fa-solid fa-x fa-2x"></i>
+      </button>
+      <div class="login-section">
+        <div class="flex-col left-sec">
+          <i class="primary fa-regular fa-user fa-5x"></i>
+          <h3>I am an art lover, a collector</h3>
+          <p>
+            Create an account to save your favorites and to receive personal
+            offers.
+          </p>
+          <button class="btn btn-primary" onclick="openSignup()">create an account</button>
+          <div>
+            <hr />
+            <p class="body-md">Already have account ?</p>
+            <a href="" class="link-text-primary">SIGN IN</a>
+          </div>
+        </div>
+        <div class="btn floating-btn">or</div>
+        <div class="flex-col right-sec gray">
+          <i class="primary fa-solid fa-palette fa-5x"></i>
+          <h3>I am an artist</h3>
+          <p>
+            You can apply online, and we will respond to you as quickly as
+            possible.
+          </p>
+          <button class="btn btn-primary">Apply Online</button>
+          <div class="">
+            <hr />
+            <p class="body-md">Already a Artsy Artist?</p>
+            <a href="" class="link-text-primary">SIGN IN</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sign up overlay -->
+    <section class="flex-col signup-section-overlay">
+      <button class="btn overlay-close" onclick="closeFunc(this)">
+        <i class="fa-solid fa-x fa-2x"></i>
+      </button>
+      <div class="flex-col signup-sec">
+        <i class="primary fa-regular fa-user fa-5x"></i>
+        <p class="body-l">Create my account on Artsy Shop!</p>
+
+        <div class="artsy-input">
+          <input type="text" />
+          <span class="input-label">Full Name</span>
+        </div>
+        <div class="artsy-input">
+          <input type="text" />
+          <span class="input-label">Email</span>
+        </div>
+        <div class="artsy-input">
+          <input type="password" />
+          <span class="input-label">Password</span>
+        </div>
+        <label class="flex-align-center">
+          <input type="checkbox" />
+          <span class="checkbox-text">
+            By registering, I accept the
+            <a class="primary" href="">General terms and conditions.</a>
+          </span>
+        </label>
+        <button class="btn btn-primary">create an account</button>
+        <div>
+          <!-- <hr /> -->
+          <p class="body-md">Already have account ?</p>
+          <a href="" class="link-text-primary">SIGN IN</a>
+        </div>
+      </div>
+    </section>
     <script src="./homepage.js"></script>
+    <script src="/index.js"></script>
   </body>
 </html>
