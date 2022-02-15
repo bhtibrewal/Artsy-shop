@@ -1,40 +1,37 @@
-/* category section */
-.category-section {
-  display: flex;
-  padding: 5rem;
-  justify-content: space-around;
-}
-.category-section .btn {
-  background: var(--secondary-color);
-  color: var(--light-bg);
-}
 
-/* her section  */
+/* hero section  */
 .hero-section {
   position: relative;
-  width: 80vw;
+  width: 90vw;
   margin: auto;
-  display:grid;
 }
-.hero-img, .hero-overlay{
-  grid-row: 1/2;
-  grid-column: 1/2;
-}
-.hero-img img {
-
-  object-fit:fill;
-}
-
 .hero-overlay {
   padding: 2rem;
   text-align: center;
   justify-content: center;
   gap: 3rem;
-  text-shadow:2px 2px 5px var(--secondary-color);
-  backdrop-filter:blur(2px);
+  text-shadow: 2px 2px 5px var(--secondary-color);
+  backdrop-filter: blur(2px);
   color: var(--light-text);
 }
-
+/* category section */
+.category-section {
+  padding: 2rem;
+  margin-top: 3rem;
+  overflow-y: auto;
+  text-align: center;
+}
+.category-grid {
+  grid-template-columns: repeat(auto-fill, minmax(min(20rem, 100%), 1fr));
+  margin:3rem;
+}
+.categories img {
+  border-radius: 4px;
+}
+.category-name {
+  background: var(--secondary-color);
+  color: var(--light-text);
+}
 
 /* collection section  */
 .collection-section {
@@ -42,11 +39,16 @@
   padding: 2rem;
   margin-top: 3rem;
 }
-.collection-grid {
-  margin: 3rem;
+.collection-cont {
+  margin: 3rem ;
 }
-.collection-image img{
-    object-fit:fill;
+@media screen  and (max-width: 800px){
+  .collection-cont{
+    grid-template-columns: 1fr;
+  }
+}
+.collection-image img {
+  object-fit: cover;
 }
 .collection-items {
   border-radius: 4px;
@@ -66,6 +68,7 @@
   height: 100%;
   text-align: left;
   display: flex;
+  justify-content: space-between;
   background: rgba(0, 0, 0, 0.356);
 }
 .collection-text {
@@ -79,14 +82,12 @@
   color: var(--light-text);
 }
 .collection-artworks {
-  /* gap: 1rem; */
   justify-content: flex-end;
   align-items: flex-end;
-  width: 50%;
+  min-width: 50%;
 }
 .collection-artwork-item {
-  flex: 0 0 6rem;
-  width: 8rem;
+  width: 50%;
   border-radius: 4px;
   overflow: hidden;
 }
