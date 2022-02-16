@@ -14,9 +14,9 @@
     <title>Artsy-shop</title>
   </head>
 
-  <body class="homepage-body">
+  <body class="body">
     <!--********** Header ************-->
-    <header class="arstyShop-header homepage-header">
+    <header class="arstyShop-header header">
       <h3>Artsy Shop</h3>
 
       <div class="artsy-input icon-input">
@@ -25,19 +25,17 @@
       </div>
 
       <div class="right-side">
-        <a href="">
-          <button class="btn btn-primary">Login</button>
-        </a>
+       
         <div onclick="openLogin()">
           <i class="fa-regular fa-user"></i>
         </div>
 
-        <a class="favourite" href="">
+        <a class="favourite" href="/pages/wishlist/wishlist.html">
           <i class="fa-regular fa-heart"></i>
           <span class="items">25</span>
         </a>
 
-        <a class="cart" href="">
+        <a class="cart" href="/pages/cart/cart.html">
           <i class="fa-solid fa-bag-shopping"></i>
           <span class="items">25</span>
         </a>
@@ -45,24 +43,9 @@
     </header>
 
     <!--********** main ************-->
-    <main class="homepage-main">
-      <!-- category section -->
-      <section class="category-section">
-        <button class="btn">Abstraction</button>
-        <a href="/pages/product/product.html">
-          <button class="btn">Nature</button>
-        </a>
-
-        <button class="btn">Landscape</button>
-        <button class="btn">Portrait</button>
-        <button class="btn">Urban</button>
-        <button class="btn">Pop Culture</button>
-        <button class="btn">Medival</button>
-        <button class="btn">Street</button>
-      </section>
-
+    <main class="main">
       <!-- hero section -->
-      <section class="hero-section">
+      <section class="hero-section grid-overlay">
         <div class="hero-img">
           <img
             alt="hero image"
@@ -75,16 +58,87 @@
         </div>
       </section>
 
+      <!-- category section -->
+      <section class="category-section">
+        <h1>Categories</h1>
+        <div class="grid-4 category-grid">
+          <a href="">
+            <div class="categories">
+              <img
+                src="https://sh-cdn.singulart.com/eyJidWNrZXQiOiJzaW5ndWxhcnQtd2Vic2l0ZS1wcm9kIiwia2V5IjoiYXJ0d29ya3NcL3YyXC9jcm9wcGVkXC8xMTQ1NVwvbWFpblwvem9vbVwvMzgxNDc1XzVkODRkMDExZjE0NWE4MDg2ZTc0YmViNDIwMGQ1YTM2LmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMwMCwiZml0IjoiaW5zaWRlIn0sInRvRm9ybWF0Ijoid2VicCIsIndlYnAiOnsicXVhbGl0eSI6NjV9fX0=?signature=d9768574e25a8de2117182bdcb8e6c21d31f74a20d9786355e26fbc203ff9f2f"
+              />
+              <button class="btn category-name">Abstraction</button>
+            </div>
+          </a>
+          <a href="/pages/product/product.html">
+            <div class="categories">
+              <img
+                src="https://sh-cdn.singulart.com/eyJidWNrZXQiOiJzaW5ndWxhcnQtd2Vic2l0ZS1wcm9kIiwia2V5IjoiYXJ0d29ya3NcL3YyXC9jcm9wcGVkXC8xMTQ1NVwvbWFpblwvem9vbVwvMzgxNDc1XzVkODRkMDExZjE0NWE4MDg2ZTc0YmViNDIwMGQ1YTM2LmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMwMCwiZml0IjoiaW5zaWRlIn0sInRvRm9ybWF0Ijoid2VicCIsIndlYnAiOnsicXVhbGl0eSI6NjV9fX0=?signature=d9768574e25a8de2117182bdcb8e6c21d31f74a20d9786355e26fbc203ff9f2f"
+              />
+              <button class="btn category-name">Nature</button>
+            </div>
+          </a>
+          <a href="">
+            <div class="categories">
+              <img
+                src="https://sh-cdn.singulart.com/eyJidWNrZXQiOiJzaW5ndWxhcnQtd2Vic2l0ZS1wcm9kIiwia2V5IjoiYXJ0d29ya3NcL3YyXC9jcm9wcGVkXC8xMTQ1NVwvbWFpblwvem9vbVwvMzgxNDc1XzVkODRkMDExZjE0NWE4MDg2ZTc0YmViNDIwMGQ1YTM2LmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMwMCwiZml0IjoiaW5zaWRlIn0sInRvRm9ybWF0Ijoid2VicCIsIndlYnAiOnsicXVhbGl0eSI6NjV9fX0=?signature=d9768574e25a8de2117182bdcb8e6c21d31f74a20d9786355e26fbc203ff9f2f"
+              />
+              <button class="btn category-name">Landscape</button>
+            </div>
+          </a>
+          <a href="">
+            <div class="categories">
+              <img
+                src="https://sh-cdn.singulart.com/eyJidWNrZXQiOiJzaW5ndWxhcnQtd2Vic2l0ZS1wcm9kIiwia2V5IjoiYXJ0d29ya3NcL3YyXC9jcm9wcGVkXC8xMTQ1NVwvbWFpblwvem9vbVwvMzgxNDc1XzVkODRkMDExZjE0NWE4MDg2ZTc0YmViNDIwMGQ1YTM2LmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMwMCwiZml0IjoiaW5zaWRlIn0sInRvRm9ybWF0Ijoid2VicCIsIndlYnAiOnsicXVhbGl0eSI6NjV9fX0=?signature=d9768574e25a8de2117182bdcb8e6c21d31f74a20d9786355e26fbc203ff9f2f"
+              />
+              <button class="btn category-name">Portrait</button>
+            </div>
+          </a>
+          <a href="">
+            <div class="categories">
+              <img
+                src="https://sh-cdn.singulart.com/eyJidWNrZXQiOiJzaW5ndWxhcnQtd2Vic2l0ZS1wcm9kIiwia2V5IjoiYXJ0d29ya3NcL3YyXC9jcm9wcGVkXC8xMTQ1NVwvbWFpblwvem9vbVwvMzgxNDc1XzVkODRkMDExZjE0NWE4MDg2ZTc0YmViNDIwMGQ1YTM2LmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMwMCwiZml0IjoiaW5zaWRlIn0sInRvRm9ybWF0Ijoid2VicCIsIndlYnAiOnsicXVhbGl0eSI6NjV9fX0=?signature=d9768574e25a8de2117182bdcb8e6c21d31f74a20d9786355e26fbc203ff9f2f"
+              />
+              <button class="btn category-name">Urban</button>
+            </div>
+          </a>
+          <a href="">
+            <div class="categories">
+              <img
+                src="https://sh-cdn.singulart.com/eyJidWNrZXQiOiJzaW5ndWxhcnQtd2Vic2l0ZS1wcm9kIiwia2V5IjoiYXJ0d29ya3NcL3YyXC9jcm9wcGVkXC8xMTQ1NVwvbWFpblwvem9vbVwvMzgxNDc1XzVkODRkMDExZjE0NWE4MDg2ZTc0YmViNDIwMGQ1YTM2LmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMwMCwiZml0IjoiaW5zaWRlIn0sInRvRm9ybWF0Ijoid2VicCIsIndlYnAiOnsicXVhbGl0eSI6NjV9fX0=?signature=d9768574e25a8de2117182bdcb8e6c21d31f74a20d9786355e26fbc203ff9f2f"
+              />
+              <button class="btn category-name">Pop Culture</button>
+            </div>
+          </a>
+          <a href="">
+            <div class="categories">
+              <img
+                src="https://sh-cdn.singulart.com/eyJidWNrZXQiOiJzaW5ndWxhcnQtd2Vic2l0ZS1wcm9kIiwia2V5IjoiYXJ0d29ya3NcL3YyXC9jcm9wcGVkXC8xMTQ1NVwvbWFpblwvem9vbVwvMzgxNDc1XzVkODRkMDExZjE0NWE4MDg2ZTc0YmViNDIwMGQ1YTM2LmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMwMCwiZml0IjoiaW5zaWRlIn0sInRvRm9ybWF0Ijoid2VicCIsIndlYnAiOnsicXVhbGl0eSI6NjV9fX0=?signature=d9768574e25a8de2117182bdcb8e6c21d31f74a20d9786355e26fbc203ff9f2f"
+              />
+              <button class="btn category-name">Medival</button>
+            </div>
+          </a>
+          <a href="">
+            <div class="categories">
+              <img
+                src="https://sh-cdn.singulart.com/eyJidWNrZXQiOiJzaW5ndWxhcnQtd2Vic2l0ZS1wcm9kIiwia2V5IjoiYXJ0d29ya3NcL3YyXC9jcm9wcGVkXC8xMTQ1NVwvbWFpblwvem9vbVwvMzgxNDc1XzVkODRkMDExZjE0NWE4MDg2ZTc0YmViNDIwMGQ1YTM2LmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMwMCwiZml0IjoiaW5zaWRlIn0sInRvRm9ybWF0Ijoid2VicCIsIndlYnAiOnsicXVhbGl0eSI6NjV9fX0=?signature=d9768574e25a8de2117182bdcb8e6c21d31f74a20d9786355e26fbc203ff9f2f"
+              />
+              <button class="btn category-name">Street</button>
+            </div>
+          </a>
+        </div>
+      </section>
+
       <!-- collection section -->
       <section class="collection-section">
         <h1>Get inspired by our Collections</h1>
 
-        <div class="collection-grid grid-2">
+        <div class="collection-cont grid-2">
           <a href="" class="collection-items">
             <div class="collection-image">
               <img
                 alt="collection image "
-                src="https://sh-cdn.singulart.com/eyJidWNrZXQiOiJzaW5ndWxhcnQtd2Vic2l0ZS1wcm9kIiwia2V5IjoiY29sbGVjdGlvbnNcL3YyXC9waWN0dXJlc1wvY3JvcHBlZFwvY292ZXJcL2Jhc2VcLzYwMTVfY292ZXJfOTEzZmRjODhhMDUzMGQ3N2UxYmM1MGQ4YmZhZTdlZDEuanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6NjIwLCJoZWlnaHQiOjQyMCwiZml0IjoiY292ZXIifSwidG9Gb3JtYXQiOiJ3ZWJwIiwid2VicCI6eyJxdWFsaXR5Ijo4MH19fQ==?signature=076ed76d7d893fd65222c6d448b4d66976923ed50fba5b9a768dd71cb6a890f9"
+                src="https://sh-cdn.singulart.com/eyJidWNrZXQiOiJzaW5ndWxhcnQtd2Vic2l0ZS1wcm9kIiwia2V5IjoiY29sbGVjdGlvbnNcL3YyXC9waWN0dXJlc1wvY3JvcHBlZFwvY292ZXJcL2Jhc2VcLzYwOTFfY292ZXJfNTE1OTFlNjE1MTczMGQ3NGQxNzFlN2ZhOTdjMjU3YzYuanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6NjIwLCJoZWlnaHQiOjQyMCwiZml0IjoiY292ZXIifSwidG9Gb3JtYXQiOiJqcGVnIiwianBlZyI6eyJxdWFsaXR5Ijo4MH19fQ==?signature=4a01e589d67a157e5a8512fb3743949df7d5612e96b02bd3b13ac924c1f72c9a"
               />
             </div>
 
@@ -92,7 +146,7 @@
               <div class="collection-text">
                 <span class="btn collection-tag">Colors</span>
                 <div>
-                  <h3>Pantoon Colors of the year 2022 - Very Peri</h3>
+                  <h3>Color of the year'22 - Very Peri</h3>
                   <p>19 artwork</p>
                 </div>
               </div>
@@ -201,7 +255,7 @@
 
         <div class="flex-col right-sec gray">
           <i class="primary fa-solid fa-palette fa-5x"></i>
-          <h3>I am an artist</h3>
+          <h3>I am an artist, I create art</h3>
           <p>
             You can apply online, and we will respond to you as quickly as
             possible.

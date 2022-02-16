@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/617c60ee1d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://artsyui.netlify.app/src/artsyUI.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/pages/cart/cart.css" />
+    <title>Artsy-shop</title>
+  </head>
+
+  <body class="body">
+    <!--********** Header ************-->
+    <header class="arstyShop-header header">
+      <a href="/"><h3>Artsy Shop</h3></a>
+
+      <div class="artsy-input icon-input">
+        <i class="fas fa-search"></i>
+        <input placeholder="Search..." type="text" />
+      </div>
+
+      <div class="right-side">
+        
+
+        <div class="" onclick="openLogin()">
+          <i class="fa-regular fa-user"></i>
+        </div>
+
+        <a class="favourite" href="/pages/wishlist/wishlist.html">
+          <i class="fa-regular fa-heart"></i>
+          <span class="items">25</span>
+        </a>
+
+        <a class="cart" href="">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="items">25</span>
+        </a>
+      </div>
+    </header>
+
+    <!--********** main ************-->
+    <main class="main">
+      <div class="cart-page">
+        <section class="cart-sec">
+          <p class="body-l">My Cart(2)</p>
+          <div class="card w-40 basic">
+            <button class="icon favourite-icon">
+              <i class="fa-regular fa-heart fa-2x"></i>
+            </button>
+            <div class="content">
+              <img
+                class="card-img"
+                src="https://render.fineartamerica.com/images/images-new-artwork/images-medium-5/la-porta-rossa-sulla-salita-guido-borelli.jpg?v=2"
+                alt=""
+              />
+
+              <div class="card-header">
+                <h1>La Porta Rossa Sulla Salita Art Print</h1>
+                <h2>by Guido Borelli</h2>
+                <div class="card-body">
+                  Visit ten places on our planet that are undergoing the biggest
+                  changes today.
+                </div>
+                <div class="price-sec">
+                  <h3>$18</h3>
+                  <span class="strike-price">$22</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-actions">
+              <button class="btn btn-primary">
+                <i class="fa-solid fa-cart-shopping"></i>
+                remove from cart
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="cart-price-sec">
+          <p><strong>Price Details</strong></p>
+          <hr />
+          <div class="calc-part">
+            <span>Price (2 Items)</span><span>₹853,200</span>
+            <span>Discount</span><span>-₹85,000</span>
+            <span>Shipping Charges</span><span>₹50,000</span>
+          </div>
+          <hr />
+          <div class="total-part">
+            <span><strong>Total</strong></span>
+            <span><strong>₹817,000</strong></span>
+          </div>
+          <hr />
+          <label>
+            <input type="checkbox" />
+            <span class="checkbox-text">This artwork is a gift. </span>
+          </label>
+          <button class="btn btn-primary">
+            <span>place order</span>
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </button>
+        </section>
+      </div>
+    </main>
+    <script src="/index.js"></script>
+  </body>
+</html>

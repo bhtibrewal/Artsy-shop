@@ -14,10 +14,10 @@
     <title>Artsy-shop</title>
   </head>
 
-  <body class="product_page-body">
+  <body class="body">
     <!--********** Header ************-->
-    <header class="arstyShop-header product_page-header">
-      <h3>Artsy Shop</h3>
+    <header class="arstyShop-header header">
+      <a href="/"><h3>Artsy Shop</h3></a>
 
       <div class="artsy-input icon-input">
         <i class="fas fa-search"></i>
@@ -25,19 +25,16 @@
       </div>
 
       <div class="right-side">
-        <a href="">
-          <button class="btn btn-primary">Login</button>
-        </a>
         <div onclick="openLogin()">
           <i class="fa-regular fa-user"></i>
         </div>
 
-        <a class="favourite" href="">
+        <a class="favourite" href="/pages/wishlist/wishlist.html">
           <i class="fa-regular fa-heart"></i>
           <span class="items">25</span>
         </a>
 
-        <a class="cart" href="">
+        <a class="cart" href="/pages/cart/cart.html">
           <i class="fa-solid fa-bag-shopping"></i>
           <span class="items">25</span>
         </a>
@@ -80,25 +77,26 @@
     </aside> -->
 
     <!--********** main ************-->
-    <main class="homepage-main product_page-main">
+    <main class="main">
+      <!--  -->
       <section class="page-header-section">
-      <div class="section-bg">
-        <img
-          src="https://d17h7hjnfv5s46.cloudfront.net/assets/build/images/banners/search/desktop/categorie/nature.90ad9bf4.jpg"
-          srcset="
-            https://d17h7hjnfv5s46.cloudfront.net/assets/build/images/banners/search/mobile/categorie/nature.4613eed6.jpg       800w,
-            https://d17h7hjnfv5s46.cloudfront.net/assets/build/images/banners/search/desktop/categorie/nature1152.73034e4d.jpg 1152w,
-            https://d17h7hjnfv5s46.cloudfront.net/assets/build/images/banners/search/desktop/categorie/nature1920.4a74dce3.jpg 1920w,
-            https://d17h7hjnfv5s46.cloudfront.net/assets/build/images/banners/search/desktop/categorie/nature3440.90ad9bf4.jpg 3440w
-          "
-          sizes="(min-width:768px) 100vw, 260px"
-          alt=""
-        />
-      </div>
-      <div class="section-content">
-        <h1>Nature Painting</h1>
-      </div>
-    </section>
+        <div class="section-bg">
+          <img
+            src="https://d17h7hjnfv5s46.cloudfront.net/assets/build/images/banners/search/desktop/categorie/nature.90ad9bf4.jpg"
+            srcset="
+              https://d17h7hjnfv5s46.cloudfront.net/assets/build/images/banners/search/mobile/categorie/nature.4613eed6.jpg       800w,
+              https://d17h7hjnfv5s46.cloudfront.net/assets/build/images/banners/search/desktop/categorie/nature1152.73034e4d.jpg 1152w,
+              https://d17h7hjnfv5s46.cloudfront.net/assets/build/images/banners/search/desktop/categorie/nature1920.4a74dce3.jpg 1920w,
+              https://d17h7hjnfv5s46.cloudfront.net/assets/build/images/banners/search/desktop/categorie/nature3440.90ad9bf4.jpg 3440w
+            "
+            sizes="(min-width:768px) 100vw, 260px"
+            alt=""
+          />
+        </div>
+        <div class="section-content">
+          <h1>Nature Painting</h1>
+        </div>
+      </section>
 
       <!-- menu section -->
       <section class="menu-sec">
@@ -138,7 +136,7 @@
 
       <!-- products section -->
       <section class="products-sec">
-        <div class="grid-3 prducts-grid">
+        <div class="grid-3 products-grid">
           <div class="card w-30 text-o-media">
             <div class="content">
               <img
