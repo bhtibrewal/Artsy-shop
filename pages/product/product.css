@@ -39,7 +39,8 @@
 .main-drop .dropdown > *:hover {
   background: var(--secondary-color);
 }
-/*  */
+
+/* dropdown */
 .dropdown-container {
   position: relative;
   padding: 1rem;
@@ -83,6 +84,7 @@
   cursor: pointer;
 }
 
+/* products section */
 .products-sec {
   margin-top: 2rem;
 }
@@ -91,4 +93,3 @@
   margin: 2rem 0;
   background: var(--light-bg);
 }
-

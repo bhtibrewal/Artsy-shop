@@ -9,8 +9,10 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* scroll bar styling */
 .main::-webkit-scrollbar {
-  width: 1.5rem;
+  width: 1rem;
   padding: 1rem;
 }
 .main::-webkit-scrollbar-thumb {
@@ -91,7 +93,7 @@ img {
   gap: 2rem;
   font-size: large;
 }
-.right-side > *:hover{
+.right-side > i:hover {
   cursor: pointer;
   color: var(--primary-color);
 }

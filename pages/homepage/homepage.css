@@ -1,4 +1,3 @@
-
 /* hero section  */
 .hero-section {
   position: relative;
@@ -23,7 +22,7 @@
 }
 .category-grid {
   grid-template-columns: repeat(auto-fill, minmax(min(20rem, 100%), 1fr));
-  margin:3rem;
+  margin: 3rem;
 }
 .categories img {
   border-radius: 4px;
@@ -40,10 +39,10 @@
   margin-top: 3rem;
 }
 .collection-cont {
-  margin: 3rem ;
+  margin: 3rem;
 }
-@media screen  and (max-width: 800px){
-  .collection-cont{
+@media screen and (max-width: 800px) {
+  .collection-cont {
     grid-template-columns: 1fr;
   }
 }
