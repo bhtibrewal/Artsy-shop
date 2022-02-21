@@ -44,7 +44,6 @@
 
     <!--********** main ************-->
     <main class="main">
-
       <section class="page-header-section">
         <div class="section-bg">
           <img
@@ -59,38 +58,219 @@
       </section>
 
       <section class="wishlist-sec">
-        <div class="card w-40 basic">
+
+        <div class="card w-30 basic">
           <button class="icon favourite-icon">
-              <i class="fas fa-heart fa-2x"></i>
+            <i class="fas fa-heart fa-2x"></i>
           </button>
           <div class="content">
-              <img class="card-img"
-                  src="https://render.fineartamerica.com/images/images-new-artwork/images-medium-5/la-porta-rossa-sulla-salita-guido-borelli.jpg?v=2"
-                  alt="" />
+            <img
+              class="card-img"
+              src="https://render.fineartamerica.com/images/images-new-artwork/images-medium-5/la-porta-rossa-sulla-salita-guido-borelli.jpg?v=2"
+              alt=""
+            />
 
-
-              <div class="card-header">
-                  <h1>La Porta Rossa Sulla Salita Art Print</h1>
-                  <h2>by Guido Borelli</h2>
-                  <div class="card-body">
-                      Visit ten places on our planet that are undergoing the biggest
-                      changes today.
-                  </div>
-                  <div class="price-sec">
-                      <h3>$18</h3><span class="strike-price">$22</span>
-                  </div>
+            <div class="card-header">
+              <h1>La Porta Rossa Sulla Salita Art Print</h1>
+              <h2>by Guido Borelli</h2>
+              <div class="card-body">
+                Visit ten places on our planet that are undergoing the biggest
+                changes today.
               </div>
+              <div class="price-sec">
+                <h3>$18</h3>
+                <span class="strike-price">$22</span>
+              </div>
+            </div>
           </div>
 
-          <div class="card-actions ">
-              <button class="btn btn-primary">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                add to cart
-              </button>
+          <div class="card-actions">
+            <button class="btn btn-primary">
+              <i class="fa-solid fa-cart-shopping"></i>
+              add to cart
+            </button>
           </div>
-      </div>
+        </div>
+        <div class="card w-30 basic">
+          <button class="icon favourite-icon">
+            <i class="fas fa-heart fa-2x"></i>
+          </button>
+          <div class="content">
+            <img
+              class="card-img"
+              src="https://render.fineartamerica.com/images/images-new-artwork/images-medium-5/la-porta-rossa-sulla-salita-guido-borelli.jpg?v=2"
+              alt=""
+            />
+
+            <div class="card-header">
+              <h1>La Porta Rossa Sulla Salita Art Print</h1>
+              <h2>by Guido Borelli</h2>
+              <div class="card-body">
+                Visit ten places on our planet that are undergoing the biggest
+                changes today.
+              </div>
+              <div class="price-sec">
+                <h3>$18</h3>
+                <span class="strike-price">$22</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-actions">
+            <button class="btn btn-primary">
+              <i class="fa-solid fa-cart-shopping"></i>
+              add to cart
+            </button>
+          </div>
+        </div>
+        <div class="card w-30 basic">
+          <button class="icon favourite-icon">
+            <i class="fas fa-heart fa-2x"></i>
+          </button>
+          <div class="content">
+            <img
+              class="card-img"
+              src="https://render.fineartamerica.com/images/images-new-artwork/images-medium-5/la-porta-rossa-sulla-salita-guido-borelli.jpg?v=2"
+              alt=""
+            />
+
+            <div class="card-header">
+              <h1>La Porta Rossa Sulla Salita Art Print</h1>
+              <h2>by Guido Borelli</h2>
+              <div class="card-body">
+                Visit ten places on our planet that are undergoing the biggest
+                changes today.
+              </div>
+              <div class="price-sec">
+                <h3>$18</h3>
+                <span class="strike-price">$22</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-actions">
+            <button class="btn btn-primary">
+              <i class="fa-solid fa-cart-shopping"></i>
+              add to cart
+            </button>
+          </div>
+        </div>
       </section>
     </main>
+
+    <!-- Login Overlay -->
+    <section class="flex-col login-section-overlay">
+      <button class="btn overlay-close" onclick="closeFunc(this)">
+        <i class="fa-solid fa-x"></i>
+      </button>
+      <div class="login-section">
+        <div class="flex-col left-sec">
+          <i class="primary fa-regular fa-user fa-5x"></i>
+          <h3>I am an art lover, a collector</h3>
+          <p>
+            Create an account to save your favorites and to receive personal
+            offers.
+          </p>
+          <button class="btn btn-primary" onclick="openSignup()">
+            create an account
+          </button>
+          <div>
+            <hr />
+            <p class="body-md">Already have account ?</p>
+            <div onclick="openSignin()" class="link-text-primary">SIGN IN</div>
+          </div>
+        </div>
+
+        <div class="btn floating-btn">or</div>
+
+        <div class="flex-col right-sec gray">
+          <i class="primary fa-solid fa-palette fa-5x"></i>
+          <h3>I am an artist, I create art</h3>
+          <p>
+            You can apply online, and we will respond to you as quickly as
+            possible.
+          </p>
+          <button class="btn btn-primary">Apply Online</button>
+          <div>
+            <hr />
+            <p class="body-md">Already a Artsy Artist?</p>
+            <div class="link-text-primary">SIGN IN</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sign up overlay -->
+    <section class="flex-col signup-section-overlay">
+      <button class="btn overlay-close" onclick="closeFunc(this)">
+        <i class="fa-solid fa-x"></i>
+      </button>
+      <div class="flex-col signup-sec">
+        <i class="primary fa-regular fa-user fa-5x"></i>
+        <p class="body-l">Create my account on Artsy Shop!</p>
+
+        <div class="artsy-input">
+          <input type="text" />
+          <span class="input-label">Full Name</span>
+        </div>
+        <div class="artsy-input">
+          <input type="text" />
+          <span class="input-label">Email</span>
+        </div>
+        <div class="artsy-input">
+          <input type="password" />
+          <span class="input-label">Password</span>
+        </div>
+        <label class="flex-align-center">
+          <input type="checkbox" />
+          <span class="checkbox-text">
+            By registering, I accept the
+            <a class="primary" href="">General terms and conditions.</a>
+          </span>
+        </label>
+        <button class="btn btn-primary">create an account</button>
+        <div>
+          <!-- <hr /> -->
+          <p class="body-md">Already have account ?</p>
+          <div onclick="openSignin()" class="link-text-primary">SIGN IN</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sign in overlay -->
+    <section class="flex-col signin-section-overlay">
+      <button class="btn overlay-close" onclick="closeFunc(this)">
+        <i class="fa-solid fa-x"></i>
+      </button>
+      <div class="flex-col signup-sec">
+        <i class="primary fa-regular fa-user fa-5x"></i>
+        <p class="body-l">Login to my user account.</p>
+
+        <div class="artsy-input">
+          <input type="text" />
+          <span class="input-label">Email</span>
+        </div>
+        <div class="artsy-input">
+          <input type="password" />
+          <span class="input-label">Password</span>
+        </div>
+        <label class="flex-align-center">
+          <input type="checkbox" />
+          <span class="checkbox-text"> Keep me logged in. </span>
+        </label>
+        <button class="btn btn-primary">
+          <span>validate</span>
+          <i class="fa-solid fa-arrow-right-long"></i>
+        </button>
+        <a href="" class="link-text-primary">Forgot your password?</a>
+        <div>
+          <!-- <hr /> -->
+          <p class="body-md">Still don't have an account ?</p>
+          <div onclick="openSignup()" class="link-text-primary">SIGN UP</div>
+        </div>
+      </div>
+    </section>
+
     <script src="/index.js"></script>
   </body>
 </html>
