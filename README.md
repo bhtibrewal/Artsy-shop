@@ -6,6 +6,10 @@
 <hr>
 
 ## Features
+- Responsive
+
+
+## P0 Screeens 
 
 - [Home Page](https://artsy-shop.netlify.app/)
 - [Product Listing Page](https://artsy-shop.netlify.app/pages/product/product.html)
@@ -15,10 +19,13 @@
     - Ratings
 - [Cart Management](https://artsy-shop.netlify.app/pages/cart/cart.html)
 - [Wishlist Management](https://artsy-shop.netlify.app/pages/wishlist/wishlist.html)
-- Authentication ( Click on user icon in header )
+- Authentication ( Click on user icon in header on landing page )
     - Sign-up
     - Login
     - Logout
+
+## P1 Screens
+- [User Profile](https://artsy-shop.netlify.app/pages/user-profile/user-profile.html)
 
 ## User
 ![image](https://user-images.githubusercontent.com/42600164/154857269-e12073ef-50a5-414e-8073-5151a59f8e12.png)

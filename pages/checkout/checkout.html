@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/617c60ee1d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://artsyui.netlify.app/src/artsyUI.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/pages/user-profile/user-profile.css" />
+    <link rel="stylesheet" href="/pages/cart/cart.css" />
+    <title>Artsy-shop</title>
+  </head>
+
+  <body class="body">
+    <!--********** Header ************-->
+    <header class="arstyShop-header header">
+      <a href="/">
+        <h3>Artsy Shop</h3>
+      </a>
+
+      <div class="artsy-input icon-input">
+        <i class="fas fa-search"></i>
+        <input placeholder="Search..." type="text" />
+      </div>
+
+      <div class="right-side">
+        <div class="user">
+          <div class="avatar-text avatar-s">BT</div>
+          <div class="user-dropdown flex-col">
+            <a
+              class="flex-align-center"
+              href="/pages/user-profile/user-profile.html"
+            >
+              <span>My Account</span>
+              <i class="fa-solid fa-angle-right"></i>
+            </a>
+            <div class="flex-align-center">
+              <span>My offers</span>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+            <div class="flex-align-center">
+              <span>Logout</span>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <a class="favourite" href="/pages/wishlist/wishlist.html">
+          <i class="fa-regular fa-heart"></i>
+          <span class="items">25</span>
+        </a>
+
+        <a class="cart" href="/pages/cart/cart.html">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="items">25</span>
+        </a>
+      </div>
+    </header>
+
+    <!--********** main ************-->
+
+    <main class="main user-page">
+      <section class="sec user-header-sec flex-col">
+        <div class="avatar-text avatar-m">BT</div>
+        <h1>Hello Bhavika</h1>
+        <p class="body-l">Artsy collector since 22/2/2022</p>
+      </section>
+      <h1>Secure Checkout in 2 steps</h1>
+
+      <section class="user-grid">
+        <form class="form sec contact-dets">
+          <h2>Shipping and Billing Address</h2>
+          <div class="flex-col inputs">
+            <label class="artsy-input">
+              <input type="text" />
+              <span class="input-label">First Name</span>
+            </label>
+            <label class="artsy-input">
+              <input type="text" />
+              <span class="input-label">Address</span>
+            </label>
+            <label class="artsy-input">
+              <input type="text" />
+              <span class="input-label">City</span>
+            </label>
+            <label class="artsy-input">
+              <input type="text" />
+              <span class="input-label">Country</span>
+            </label>
+            <label class="artsy-input">
+              <input type="text" />
+              <span class="input-label">Zip Code</span>
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary">
+              Continue
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </form>
+        <section class="cart-price-sec">
+          <p><strong>Price Details</strong></p>
+          <hr />
+          <div class="calc-part">
+            <span>Price (2 Items)</span><span>₹853,200</span>
+            <span>Discount</span><span>-₹85,000</span>
+            <span>Shipping Charges</span><span>₹50,000</span>
+          </div>
+          <hr />
+          <div class="total-part">
+            <span><strong>Total</strong></span>
+            <span><strong>₹817,000</strong></span>
+          </div>
+          <hr />
+          <label>
+            <input type="checkbox" />
+            <span class="checkbox-text">This artwork is a gift. </span>
+          </label>
+          
+        </section>
+      </section>
+    </main>
+    <script src="/index.js"></script>
+  </body>
+</html>

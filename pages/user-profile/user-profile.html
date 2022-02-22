@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/617c60ee1d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://artsyui.netlify.app/src/artsyUI.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/pages/user-profile/user-profile.css" />
+    <title>Artsy-shop</title>
+  </head>
+
+  <body class="body">
+    <!--********** Header ************-->
+    <header class="arstyShop-header header">
+      <a href="/">
+        <h3><i class="fa-brands fa-shopify"></i>Artsy Shop</h3>
+      </a>
+
+      <div class="artsy-input icon-input">
+        <i class="fas fa-search"></i>
+        <input placeholder="Search..." type="text" />
+      </div>
+
+      <div class="right-side">
+        <div class="user">
+          <div class="avatar-text avatar-s">BT</div>
+          <div class="user-dropdown flex-col">
+            <div class="flex-align-center">
+              <span>My Account</span>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+            <div class="flex-align-center">
+              <span>My offers</span>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+            <div class="flex-align-center">
+              <span>Logout</span>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <a class="favourite" href="/pages/wishlist/wishlist.html">
+          <i class="fa-regular fa-heart"></i>
+          <span class="items">25</span>
+        </a>
+
+        <a class="cart" href="/pages/cart/cart.html">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="items">25</span>
+        </a>
+      </div>
+    </header>
+
+    <!--********** main ************-->
+
+    <main class="main user-page">
+        <!-- header section -->
+      <section class="sec user-header-sec flex-col">
+        <div class="avatar-text avatar-m">BT</div>
+        <h1>Hello Bhavika</h1>
+        <p class="body-l">Artsy collector since 22/2/2022</p>
+      </section>
+      <h1>My Account</h1>
+
+      <!-- grid  -->
+      <section class="user-grid">
+          <!-- contact details from -->
+        <form class="form sec contact-dets">
+         
+          <div class="flex-col inputs">
+            <h2>User Contact Details</h2>
+          <label class="artsy-input">
+            <input type="text" />
+            <span class="input-label">First Name</span>
+          </label>
+          <label class="artsy-input">
+            <input type="text" />
+            <span class="input-label">Email</span>
+          </label>
+          <label class="artsy-input">
+            <input type="text" />
+            <span class="input-label">Phone Number</span>
+          </label>
+          <button type="submit" class="btn btn-primary">Update</button>
+          </div>
+          
+        </form>
+
+         <!-- payment details from -->
+        <div class="sec flex-col payment-dets">
+          <h2>Payment Settings</h2>
+          <p class="body-l">My Card</p>
+          <i class="fa-solid fa-credit-card primary-text fa-8x"></i>
+          <p>Add a card for future use.</p>
+          <button type="button" class="btn btn-primary">add a card</button>
+        </div>
+
+        <!-- password reset section -->
+        <form class="form sec contact-dets">
+            
+            <div class="flex-col inputs">
+                <h2>Account Settings</h2>
+            <label class="artsy-input">
+              <input type="text" />
+              <span class="input-label">Current Password</span>
+            </label>
+            <label class="artsy-input">
+              <input type="text" />
+              <span class="input-label">New Password</span>
+            </label>
+            <label class="artsy-input">
+              <input type="text" />
+              <span class="input-label">Confirm Password</span>
+            </label>
+            <button type="submit" class="btn btn-primary">change my password</button>
+            </div>
+            
+          </form>
+
+        <!-- Address details section -->
+        <form class="form sec contact-dets">
+          
+          <div class="flex-col inputs">
+            <h2>My Address Details</h2>
+          <label class="artsy-input">
+            <input type="text" />
+            <span class="input-label">First Name</span>
+          </label>
+          <label class="artsy-input">
+            <input type="text" />
+            <span class="input-label">Address</span>
+          </label>
+          <label class="artsy-input">
+            <input type="text" />
+            <span class="input-label">City</span>
+          </label>
+          <label class="artsy-input">
+            <input type="text" />
+            <span class="input-label">Country</span>
+          </label>
+          <label class="artsy-input">
+            <input type="text" />
+            <span class="input-label">Zip Code</span>
+          </label>
+          <button type="submit" class="btn btn-primary">Update</button>
+          </div>
+          
+        </form>
+      </section>
+    </main>
+    <script src="/index.js"></script>
+  </body>
+</html>

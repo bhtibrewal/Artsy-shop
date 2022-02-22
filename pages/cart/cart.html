@@ -25,10 +25,25 @@
       </div>
 
       <div class="right-side">
-        
-
-        <div class="" onclick="openLogin()">
-          <i class="fa-regular fa-user"></i>
+        <div class="user">
+          <div class="avatar-text avatar-s">BT</div>
+          <div class="user-dropdown flex-col">
+            <a
+              class="flex-align-center"
+              href="/pages/user-profile/user-profile.html"
+            >
+              <span>My Account</span>
+              <i class="fa-solid fa-angle-right"></i>
+            </a>
+            <a class="flex-align-center">
+              <span>My offers</span>
+              <i class="fa-solid fa-angle-right"></i>
+            </a>
+            <a class="flex-align-center">
+              <span>Logout</span>
+              <i class="fa-solid fa-angle-right"></i>
+            </a>
+          </div>
         </div>
 
         <a class="favourite" href="/pages/wishlist/wishlist.html">
@@ -46,67 +61,66 @@
     <!--********** main ************-->
 
     <main class="main cart-page">
-        <section class="cart-sec">
-          <p class="body-l">My Cart(2)</p>
-          <div class="card w-40 hori">
-            
-            <div class="content">
-              <img
-                class="card-img"
-                src="https://render.fineartamerica.com/images/images-new-artwork/images-medium-5/la-porta-rossa-sulla-salita-guido-borelli.jpg?v=2"
-                alt=""
-              />
+      <section class="cart-sec">
+        <p class="body-l">My Cart(2)</p>
+        <div class="card w-40 hori">
+          <div class="content">
+            <img
+              class="card-img"
+              src="https://render.fineartamerica.com/images/images-new-artwork/images-medium-5/la-porta-rossa-sulla-salita-guido-borelli.jpg?v=2"
+              alt=""
+            />
 
-              <div class="card-header">
-                <h1>La Porta Rossa Sulla Salita Art Print</h1>
-                <h2>by Guido Borelli</h2>
-                <div class="card-body">
-                  Visit ten places on our planet that are undergoing the biggest
-                  changes today.
-                </div>
-                <div class="price-sec">
-                  <h3>$18</h3>
-                  <span class="strike-price">$22</span>
-                </div>
+            <div class="card-header">
+              <h1>La Porta Rossa Sulla Salita Art Print</h1>
+              <h2>by Guido Borelli</h2>
+              <div class="card-body">
+                Visit ten places on our planet that are undergoing the biggest
+                changes today.
+              </div>
+              <div class="price-sec">
+                <h3>$18</h3>
+                <span class="strike-price">$22</span>
               </div>
             </div>
-
-            <div class="card-actions">
-              <button class="btn btn-primary">
-                <i class="fa-solid fa-cart-shopping"></i>
-                remove from cart
-              </button>
-
-              <button class="btn outline-btn-secondary">
-                move to wishlist
-              </button>
-            </div>
           </div>
-        </section>
 
-        <section class="cart-price-sec">
-          <p><strong>Price Details</strong></p>
-          <hr />
-          <div class="calc-part">
-            <span>Price (2 Items)</span><span>₹853,200</span>
-            <span>Discount</span><span>-₹85,000</span>
-            <span>Shipping Charges</span><span>₹50,000</span>
+          <div class="card-actions">
+            <button class="btn btn-primary">
+              <i class="fa-solid fa-cart-shopping"></i>
+              remove from cart
+            </button>
+
+            <button class="btn outline-btn-secondary">move to wishlist</button>
           </div>
-          <hr />
-          <div class="total-part">
-            <span><strong>Total</strong></span>
-            <span><strong>₹817,000</strong></span>
-          </div>
-          <hr />
-          <label>
-            <input type="checkbox" />
-            <span class="checkbox-text">This artwork is a gift. </span>
-          </label>
+        </div>
+      </section>
+
+      <section class="cart-price-sec">
+        <p><strong>Price Details</strong></p>
+        <hr />
+        <div class="calc-part">
+          <span>Price (2 Items)</span><span>₹853,200</span> <span>Discount</span
+          ><span>-₹85,000</span> <span>Shipping Charges</span
+          ><span>₹50,000</span>
+        </div>
+        <hr />
+        <div class="total-part">
+          <span><strong>Total</strong></span>
+          <span><strong>₹817,000</strong></span>
+        </div>
+        <hr />
+        <label>
+          <input type="checkbox" />
+          <span class="checkbox-text">This artwork is a gift. </span>
+        </label>
+        <a href="/pages/checkout/checkout.html">
           <button class="btn btn-primary">
             <span>place order</span>
             <i class="fa-solid fa-arrow-right-long"></i>
           </button>
-        </section>     
+        </a>
+      </section>
     </main>
 
     <!-- Login Overlay -->

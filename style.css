@@ -101,6 +101,33 @@ img {
   color: var(--primary-color);
   font-size: 1.4rem;
 }
+.user {
+  cursor: pointer;
+  position: relative;
+}
+.user:hover .user-dropdown {
+  display: flex;
+}
+.user-dropdown {
+  position: absolute;
+  top: 5rem;
+  background: var(--light-bg);
+  color: var(--secondary-color);
+  box-shadow: 0 0 10px -2px var(--secondary-text);
+  width: 20rem;
+  padding: 1rem 0;
+  border-radius: 0.4rem;
+  display: none;
+}
+.user-dropdown > * {
+  align-self: stretch;
+  padding: 1rem 1rem;
+  justify-content: space-between;
+}
+.user-dropdown > *:hover {
+  background: var(--secondary-color);
+  color: var(--light-bg);
+}
 
 /* page layout */
 .body {
@@ -194,7 +221,12 @@ img {
 .signup-sec input {
   align-self: flex-start;
 }
-
+.passwrd-input i {
+  position: absolute;
+  font-size: 1.5rem;
+  top: 1.5rem;
+  right: 1rem;
+}
 /*  */
 .page-header-section {
   display: grid;
