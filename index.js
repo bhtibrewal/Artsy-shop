@@ -18,8 +18,3 @@ const openSignin = () => {
     signupSection.style.display = "none";
     signinSection.style.display = "flex";
 }
-// let on = false;
-// const openDropdown = (e) => {
-//     on = !on;
-//     e.nextElementSibling.style.display = on ? "flex" : "none";
-// }
