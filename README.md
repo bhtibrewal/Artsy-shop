@@ -5,9 +5,9 @@
 
 <hr>
 
-## Features
-- Responsive
 
+## Features
+- Responsive Design
 
 ## P0 Screeens 
 
@@ -26,6 +26,7 @@
 
 ## P1 Screens
 - [User Profile](https://artsy-shop.netlify.app/pages/user-profile/user-profile.html)
+- [Checkout](https://artsy-shop.netlify.app/pages/checkout/checkout.html)
 
 ## User
 ![image](https://user-images.githubusercontent.com/42600164/154857269-e12073ef-50a5-414e-8073-5151a59f8e12.png)
@@ -41,6 +42,8 @@
 ![image](https://user-images.githubusercontent.com/42600164/154857200-875cb16e-041f-4bea-a9fa-dd0e2872670f.png)
 ## Cart page
 ![image](https://user-images.githubusercontent.com/42600164/154857370-e14bda71-02c1-445b-9b6a-7e5acecb57c2.png)
+
+https://user-images.githubusercontent.com/42600164/155201402-dc8e8d40-7250-469d-8f08-59ab020bc8de.mp4
 
 ## TechStack
 - HTML
